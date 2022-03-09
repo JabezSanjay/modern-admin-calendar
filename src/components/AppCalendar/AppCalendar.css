@@ -29,6 +29,7 @@
     border: 1px solid #f1f6fa !important;
     border-radius: 14px;
   }
+
   .fc .fc-daygrid-day.fc-day-today .fc-scrollgrid-sync-inner {
     background-color: #f1f6fa;
     border: 2px solid #ff844b !important;
@@ -41,6 +42,10 @@
   }
   .fc-day-today {
     background-color: #fff;
+  }
+
+  .fc .fc-daygrid-body-unbalanced {
+    width: 100% !important;
   }
 
   .fc td,
