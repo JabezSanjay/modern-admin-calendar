@@ -43,11 +43,9 @@
   .fc-day-today {
     background-color: #fff;
   }
-
+  .fc .fc-col-header,
+  .fc .fc-scrollgrid-sync-table,
   .fc .fc-daygrid-body-unbalanced {
-    width: 100% !important;
-  }
-  .fc .fc-scrollgrid-sync-table {
     width: 100% !important;
   }
 
