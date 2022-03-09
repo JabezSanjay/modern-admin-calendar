@@ -3,7 +3,7 @@ import IMAGES from '../../images/index';
 
 const AppSidebar = () => {
   return (
-    <div className='flex flex-col w-24 h-screen px-4 py-8 overflow-y-auto bg-white'>
+    <div className='flex-col w-24 min-h-full px-4 py-8 overflow-y-auto bg-white hidden md:flex'>
       <img src={IMAGES.logo} alt='' className='w-12 h-12 mx-auto' />
       <div className='flex flex-col justify-between mt-6'>
         <aside>

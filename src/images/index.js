@@ -9,5 +9,6 @@ const IMAGES = {
   chatIcon: require('./chat-icon.png'),
   announcementIcon: require('./announcement-icon.png'),
   settingIcon: require('./setting-icon.png'),
+  arrowIcon: require('./arrow-icon.png'),
 };
 export default IMAGES;
