@@ -2,11 +2,14 @@ import React from 'react';
 import IMAGES from '../../images';
 
 const AppCard = ({ event }) => {
-  let borderLeft = `border-l-[${event.color}]`;
-  console.log(borderLeft);
   return (
     <div className='w-full lg:w-80 h-36 bg-white shadow-md rounded-2xl py-5 flex items-center space-y-10 mt-10'>
-      <div className={`border-l-2 h-[100%] ${borderLeft} w-full`}>
+      <div
+        className={`border-l-2 h-[100%] w-full`}
+        style={{
+          borderLeftColor: event.color,
+        }}
+      >
         <div className='flex items-center flex-row justify-between px-2 flex-wrap'>
           <div className='flex flex-col pl-3'>
             <span className='text-md font-semibold text-black'>
