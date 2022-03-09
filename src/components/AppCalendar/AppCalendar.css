@@ -91,3 +91,10 @@
 .fc .fc-toolbar {
   padding: 40px 40px 0 40px;
 }
+
+.fc .fc-col-header,
+.fc .fc-scrollgrid-sync-table,
+.fc .fc-daygrid-body-unbalanced {
+  width: 100% !important;
+  height: 100% !important;
+}
