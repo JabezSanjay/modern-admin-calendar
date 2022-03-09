@@ -47,6 +47,9 @@
   .fc .fc-daygrid-body-unbalanced {
     width: 100% !important;
   }
+  .fc .fc-scrollgrid-sync-table {
+    width: 100% !important;
+  }
 
   .fc td,
   .fc th,
