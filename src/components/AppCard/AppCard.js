@@ -19,7 +19,12 @@ const AppCard = ({ event }) => {
               2 Task
             </span>
           </div>
-          <div className='w-12 h-12 rounded-2xl mr-5 flex-shrink-0 object-cover object-center bg-[#6F96AA]'></div>
+          <div
+            className='w-12 h-12 rounded-2xl mr-5 flex-shrink-0 object-cover object-center'
+            style={{
+              backgroundColor: event.color,
+            }}
+          ></div>
         </div>
         <p className='pl-5 mt-4 text-sm text-orange-500 flex cursor-pointer font-semibold'>
           View Details
