@@ -2,7 +2,6 @@ import React from 'react';
 import FullCalendar from '@fullcalendar/react'; // must go before plugins
 import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
 import './AppCalendar.css';
-import { events } from '../../api/mock';
 
 // const days = [
 //   'Sunday',
@@ -14,7 +13,7 @@ import { events } from '../../api/mock';
 //   'Saturday',
 // ];
 
-const AppCalendar = () => {
+const AppCalendar = ({ events }) => {
   return (
     <>
       <FullCalendar

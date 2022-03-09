@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { events } from './api/mock';
 import AppCalendar from './components/AppCalendar/AppCalendar';
 import AppCard from './components/AppCard/AppCard';
@@ -6,6 +6,13 @@ import AppNavbar from './components/AppNavbar/AppNavbar';
 import AppSidebar from './components/AppSidebar/AppSidebar';
 
 const App = () => {
+  const [calendarEvents, setcalendarEvents] = useState([]);
+  useEffect(() => {
+    events.map((event) => {
+      return setcalendarEvents((prev) => [...prev, event]);
+    });
+  }, []);
+
   return (
     <>
       <div className='flex'>
@@ -18,13 +25,13 @@ const App = () => {
             <h1 className='font-bold text-2xl mb-11'>Calendar</h1>
             <div className='calendar-section bg-white shadow-md rounded-2xl'>
               <div>
-                <AppCalendar />
+                <AppCalendar events={calendarEvents} />
               </div>
             </div>
             <div className='schedule-details-section mt-10'>
               <h1 className='font-bold text-xl'>Schedule Details</h1>
               <div className='flex flex-wrap justify-between'>
-                {events.map((event) => {
+                {calendarEvents.map((event) => {
                   return <AppCard event={event} key={event.color} />;
                 })}
               </div>
